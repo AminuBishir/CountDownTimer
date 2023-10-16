@@ -1,0 +1,214 @@
+
+    body {
+        font-family: 'Major Mono Display', monospace;
+        background-color: hsla(0, 0%, 100%, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    /*animated background*/
+    
+    .background .particle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-color: green;
+      border-radius: 50%;
+      animation: move 3.5s infinite linear;
+    }
+
+    .background .particle.dark-green {
+      background-color: darkgreen;
+      animation: move 4.2s infinite linear;
+      
+    }
+
+    .background .particle.pale-yellow {
+      background-color: yellowgreen;
+      bottom: 10;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 60%;
+      animation: move-right 4s infinite linear
+
+    }
+
+    .background .particle.red {
+      background-color: red;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 60%;
+      animation: move 3s infinite linear;
+    }
+
+    @keyframes move {
+      10% {
+        transform: translateX(10) translateY(10vw);
+      }
+
+      100% {
+        transform: translateX(100vw) translateY(100vh);
+      }
+      
+    }
+    @keyframes move-right {
+      10% {
+        transform: translateY(0) translateX(10vw);
+      }
+
+      100% {
+        transform: translateX(100vw) translateY(100vh);
+      }
+      
+    }
+
+    .text {
+        font-size: 4.4vw;
+        text-align: center;
+        margin-left: 20px;
+        color: #473d3d;
+        letter-spacing: 2px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .section
+    {
+        /* height: 48px; */
+        /* line-height: 48px; */
+    }
+
+    .border-bottom-class
+    {
+        /* border-bottom: 1px solid #8c8c8c; */
+    }
+
+    /* .days-color {
+        
+    }
+
+    .hours-color {
+        
+    }
+
+    .minutes-color {
+        
+    }
+
+    .seconds-color {
+        
+    } */
+
+    .container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    
+      
+
+      .countdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .countdown-header {
+        text-align: center;
+      }
+      
+      .countdown-timer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      
+      .countdown-label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      #days, #hours, #minutes, #seconds {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      /*.countdown {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-timer {
+  border-bottom: 1px solid #ccc;
+}
+
+.countdown-label {
+  color: #ccc;
+}
+
+#days, #hours, #minutes, #seconds {
+  color: #000;
+}*/
+
+
+.countdown1 {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .countdown-timer {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .countdown-label {
+    color: #ccc;
+  }
+  
+  #days, #hours, #minutes, #seconds {
+    color: #000;
+  }
+  
+  
+  
+  /*Fliiping*/
+  /*START OF FLIP EXAMPLE PRESET*/
+
+
+  .tick {
+      padding-bottom: 1em;
+      font-size:1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  
+  .tick-label {
+      font-size:.375em;
+      text-align:center;
+  }
+
+  .tick-group {
+      margin:0 .25em;
+      text-align:center;
+  }

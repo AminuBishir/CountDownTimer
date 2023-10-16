@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width">
-    <title>Flip Example Preset</title>
+    <title>NUIMS Count Down!</title>
 
     <link rel="stylesheet" href="./flip/flip.min.css">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="css//styles.css">
 
 
 </head>
 <body>
 
 
+
     <div class="text">
-       Count Down to MADU First Date!
+       Count Down to MADU First Oil Date (December, 2023)! 
     </div>
 
 <div class="tick"
@@ -45,6 +46,14 @@
     </div>
 
 </div>
+<div class="background">
+    <div class="particle"></div>
+    <div class="particle dark-green"></div>
+    <div class="particle pale-yellow"></div>
+    <div class="particle red"></div>
+    
+    
+  </div>
 
 <script>
 	function handleTickInit(tick) {
@@ -79,7 +88,7 @@
         var nextYear = (new Date()).getFullYear() + 1;
         
 		//Tick.count.down(nextYear + '-01-01').onupdate = function(value) {
-        Tick.count.down('2023-12-01').onupdate = function(value) {
+        Tick.count.down('2023-12-30').onupdate = function(value) {
 			tick.value = value;
         };
 

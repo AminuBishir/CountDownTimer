@@ -77,7 +77,7 @@ flipCards.forEach(card => {
 setInterval(updateCountDown, 1000);
 
 function updateCountDown() {
-  const countDownDate = new Date("2023-10-31T00:00:00"); // Set the countdown date here
+  const countDownDate = new Date("2023-12-3T00:00:00"); // Set the countdown date here
   const now = new Date();
   const timeLeft = countDownDate - now;
 
